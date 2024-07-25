@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    image: spring-boot-backend:latest
+    container_name: backend
+    build:
+      context: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      - username=jakemaxell
+      - password=Abbey1998!
+    networks:
+      - network_bridge
+
+  frontend:
+    image: react-frontend
+    container_name: frontend
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - network_bridge
+
+networks:
+  network_bridge:
+    driver: bridge
