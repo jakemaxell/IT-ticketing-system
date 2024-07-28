@@ -2,6 +2,10 @@
 
 #root{ padding: 0px; }
 
+.main-content {
+    padding-top: 60px;
+}
+
 .welcome-container {
     display: flex;
     justify-content: center;
@@ -42,6 +46,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+
 }
 
 .custom-navbar-brand {
