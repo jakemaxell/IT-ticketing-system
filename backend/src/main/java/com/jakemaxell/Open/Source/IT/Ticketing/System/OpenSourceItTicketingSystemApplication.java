@@ -10,7 +10,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 public class OpenSourceItTicketingSystemApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OpenSourceItTicketingSystemApplication.class, args);
+		SpringApplication.run(OpenSourceItTickeetingSystemApplication.class, args);
 	}
 
 }
