@@ -5,7 +5,7 @@ Follow these steps to get the application up and running:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/jakemaxell/IT-ticketing-system.git
    cd your-repo
    ```
 
@@ -28,15 +28,15 @@ Follow these steps to get the application up and running:
    - **Windows:**
 
      ```bash
-     cd IT-TICKETING-SYSTEM/scripts
+     cd "IT TICKETING SYSTEM/scripts"
      setup-windows.bat
      ```
 
    - **Mac/Linux:**
 
      ```bash
-     cd IT-TICKETING-SYSTEM/scripts
-     ./setup-mac-linux.sh
+     cd "IT TICKETING SYSTEM/scripts"
+     sh setup-mac-linux.sh
      ```
 
 6. **Wait for Setup to Complete**
