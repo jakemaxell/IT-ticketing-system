@@ -19,7 +19,7 @@ function NavBar() {
     };
 
     return (
-        <Navbar className="custom-navbar" style={{ zIndex: 10, position: 'relative' }}>
+        <Navbar className="custom-navbar" style={{ zIndex: 10 }}>
             <Navbar.Brand className="custom-navbar-brand" onClick={handleHomeClick}>
                 IT Ticketing System
             </Navbar.Brand>

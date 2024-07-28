@@ -38,6 +38,10 @@
 .custom-navbar {
     background-color: #446FFF;
     color: #fff;
+    border-radius: 0.5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .custom-navbar-brand {
