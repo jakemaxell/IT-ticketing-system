@@ -1,7 +1,3 @@
-Here's a streamlined and user-friendly version of your README instructions:
-
----
-
 ## Running the App
 
 Follow these steps to get the application up and running:
