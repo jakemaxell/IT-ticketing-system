@@ -6,7 +6,7 @@ function About(){
         <div>
             <NavBar/>
             <h1>About Page</h1>
-            <p>Hello</p>
+            <p>Hello this is an about page</p>
         </div>
     );
 };
