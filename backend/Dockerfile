@@ -1,15 +1,18 @@
-FROM tomcat:latest
+FROM maven:3.8.1-openjdk-17 AS build
 
-RUN mv /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps/
+WORKDIR /app
+
+COPY . .
+
+RUN mvn clean install -DskipTests
+
+FROM tomcat:latest
 
 RUN apt-get update && \
     apt-get install -y nano && \
     apt-get clean
 
-ADD target/TICKETS.war /usr/local/tomcat/webapps/
-ADD docker-files/context.xml /usr/local/tomcat/webapps/manager/META-INF/
-ADD docker-files/tomcat-users.xml /usr/local/tomcat/conf/
-ADD docker-files/logging.properties /usr/local/tomcat/conf/
+ADD target/ROOT.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 

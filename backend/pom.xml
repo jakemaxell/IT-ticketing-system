@@ -33,7 +33,7 @@
 	</scm>
 
 	<properties>
-		<java.version>22</java.version>
+		<java.version>17</java.version>
 	</properties>
 
 	<packaging>war</packaging>
@@ -70,7 +70,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>TICKETS</finalName>
+		<finalName>ROOT</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

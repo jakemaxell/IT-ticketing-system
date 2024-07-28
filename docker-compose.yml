@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   tomcat:
-    container_name: tomcat
+    container_name: backend
     build:
       context: ./backend
     ports:
@@ -13,15 +13,14 @@ services:
     networks:
       - network_bridge
 
-  # frontend:
-  #   image: react-frontend
-  #   container_name: frontend
-  #   build:
-  #     context: ./frontend
-  #   ports:
-  #     - "3000:3000"
-  #   networks:
-  #     - network_bridge
+  node:
+    container_name: frontend
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - network_bridge
 
 networks:
   network_bridge:
