@@ -34,3 +34,20 @@
     max-width: 600px;
     width: 100%; 
 }
+
+.custom-navbar {
+    background-color: #446FFF;
+    color: #fff;
+}
+
+.custom-navbar-brand {
+    color: #fff;
+}
+
+.custom-nav-item {
+    color: #fff;
+}
+
+.custom-nav-item:hover {
+    color: #ddd;
+}

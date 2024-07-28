@@ -1,7 +1,9 @@
+import React from 'react';
 import { Navbar, Nav } from 'rsuite';
 import { useNavigate } from 'react-router-dom';
+import '../App.css'; // Import the CSS file
 
-function NavBar(){
+function NavBar() {
     const navigate = useNavigate();
 
     const handleHomeClick = () => {
@@ -12,23 +14,25 @@ function NavBar(){
         navigate("/submit-ticket");
     };
 
-    return(
-        <Navbar style={{ zIndex: 10, position: 'relative' }}>
-            <Navbar.Brand onClick={handleHomeClick}>IT Ticketing System</Navbar.Brand>
+    return (
+        <Navbar className="custom-navbar" style={{ zIndex: 10, position: 'relative' }}>
+            <Navbar.Brand className="custom-navbar-brand" onClick={handleHomeClick}>
+                IT Ticketing System
+            </Navbar.Brand>
             <Nav>
-                <Nav.Item onClick={handleTicketClick}>Submit a Ticket</Nav.Item>
-                <Nav.Item>Test</Nav.Item>
-                <Nav.Item>About</Nav.Item>
+                <Nav.Item className="custom-nav-item" onClick={handleTicketClick}>Submit a Ticket</Nav.Item>
+                <Nav.Item className="custom-nav-item">Test</Nav.Item>
+                <Nav.Item className="custom-nav-item">About</Nav.Item>
                 <Nav.Menu title="Contact">
-                    <Nav.Item>Via Email</Nav.Item>
-                    <Nav.Item>Via Phone</Nav.Item>
+                    <Nav.Item className="custom-nav-item">Via Email</Nav.Item>
+                    <Nav.Item className="custom-nav-item">Via Phone</Nav.Item>
                 </Nav.Menu>
             </Nav>
-            <Nav pullRight>
-                <Nav.Item>Admin Login</Nav.Item>
+            <Nav className="custom-nav-right" pullRight>
+                <Nav.Item className="custom-nav-item">Admin Login</Nav.Item>
             </Nav>
         </Navbar>
     );
-};
+}
 
 export default NavBar;
