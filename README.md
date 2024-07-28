@@ -28,14 +28,14 @@ Follow these steps to get the application up and running:
    - **Windows:**
 
      ```bash
-     cd IT-ticketing-system/scripts
+     cd scripts
      setup-windows.bat
      ```
 
    - **Mac/Linux:**
 
      ```bash
-     cd IT-ticketing-system/scripts
+     cd scripts
      sh setup-mac-linux.sh
      ```
 
