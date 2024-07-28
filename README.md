@@ -6,7 +6,7 @@ Follow these steps to get the application up and running:
 
    ```bash
    git clone https://github.com/jakemaxell/IT-ticketing-system.git
-   cd "IT TICKETING SYSTEM"
+   cd IT-ticketing-system
    ```
 
 2. **Install Maven**
@@ -28,14 +28,14 @@ Follow these steps to get the application up and running:
    - **Windows:**
 
      ```bash
-     cd "IT TICKETING SYSTEM/scripts"
+     cd IT-ticketing-system/scripts
      setup-windows.bat
      ```
 
    - **Mac/Linux:**
 
      ```bash
-     cd "IT TICKETING SYSTEM/scripts"
+     cd IT-ticketing-system/scripts
      sh setup-mac-linux.sh
      ```
 
