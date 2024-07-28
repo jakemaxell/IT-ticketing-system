@@ -29,14 +29,14 @@ Follow these steps to get the application up and running:
 
      ```bash
      cd scripts
-     setup-windows.bat
+     startup-for-windows.bat
      ```
 
    - **Mac/Linux:**
 
      ```bash
      cd scripts
-     sh setup-mac-linux.sh
+     sh startup-for-linux-or-mac.sh
      ```
 
 6. **Wait for Setup to Complete**
