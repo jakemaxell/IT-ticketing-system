@@ -29,7 +29,7 @@ Follow these steps to get the application up and running:
 
      ```bash
      cd scripts
-     startup-for-windows.bat
+     .\startup-for-windows.bat
      ```
 
    - **Mac/Linux:**
