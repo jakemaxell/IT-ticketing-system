@@ -6,7 +6,7 @@ Follow these steps to get the application up and running:
 
    ```bash
    git clone https://github.com/jakemaxell/IT-ticketing-system.git
-   cd your-repo
+   cd "IT TICKETING SYSTEM"
    ```
 
 2. **Install Maven**
