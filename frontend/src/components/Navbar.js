@@ -24,8 +24,8 @@ function NavBar() {
                 <Nav.Item className="custom-nav-item">Test</Nav.Item>
                 <Nav.Item className="custom-nav-item">About</Nav.Item>
                 <Nav.Menu title="Contact">
-                    <Nav.Item className="custom-nav-item">Via Email</Nav.Item>
-                    <Nav.Item className="custom-nav-item">Via Phone</Nav.Item>
+                    <Nav.Item>Via Email</Nav.Item>
+                    <Nav.Item>Via Phone</Nav.Item>
                 </Nav.Menu>
             </Nav>
             <Nav className="custom-nav-right" pullRight>
