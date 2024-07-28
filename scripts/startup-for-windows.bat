@@ -1,6 +1,6 @@
 @echo off
 
-cd ./backend
+cd ../backend
 
 call mvn clean install -DskipTests || goto :error
 
