@@ -14,6 +14,10 @@ function NavBar() {
         navigate("/submit-ticket");
     };
 
+    const handleAboutClick = () => {
+        navigate("/about");
+    };
+
     return (
         <Navbar className="custom-navbar" style={{ zIndex: 10, position: 'relative' }}>
             <Navbar.Brand className="custom-navbar-brand" onClick={handleHomeClick}>
@@ -22,7 +26,7 @@ function NavBar() {
             <Nav>
                 <Nav.Item className="custom-nav-item" onClick={handleTicketClick}>Submit a Ticket</Nav.Item>
                 <Nav.Item className="custom-nav-item">Test</Nav.Item>
-                <Nav.Item className="custom-nav-item">About</Nav.Item>
+                <Nav.Item className="custom-nav-item" onClick={handleAboutClick}>About</Nav.Item>
                 <Nav.Menu title="Contact">
                     <Nav.Item>Via Email</Nav.Item>
                     <Nav.Item>Via Phone</Nav.Item>
