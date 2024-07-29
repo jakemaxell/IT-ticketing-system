@@ -1,6 +1,7 @@
 package com.jakemaxell.Open.Source.IT.Ticketing.System.controllers;
 
 import com.jakemaxell.Open.Source.IT.Ticketing.System.models.Users.User;
+import com.jakemaxell.Open.Source.IT.Ticketing.System.models.Users.UserSearchCriteria;
 import com.jakemaxell.Open.Source.IT.Ticketing.System.services.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +21,16 @@ public class UserController {
     @PostMapping("/create-user")
     public ResponseEntity<String> createUser(@RequestBody User user){
         return ResponseEntity.ok().body(userService.createUser(user));
+    }
+
+    @PostMapping("/find-user-by-username")
+    public ResponseEntity<User> findUserByUsername(@RequestBody UserSearchCriteria userSearchCriteria){
+        User user = userService.findUserByUsername(userSearchCriteria.getUsername(), userSearchCriteria.getPassword());
+        if(user != null){
+            return ResponseEntity.ok().body(user);
+        }
+        
+        return ResponseEntity.notFound().build();
     }
 
 }
