@@ -18,11 +18,16 @@ public class UserService {
     // POST
     public String createUser(User user){
         try {
-            userRepository.save(user);
+            User existingUser = userRepository.findUserByUsername(user.getUsername());
+            if(existingUser == null) {
+                userRepository.save(user);
+                return user.getId();
+            } else {
+                return "A user with that username already exists";
+            }
         } catch (Exception exception){
             return exception.getMessage();
         }
-        return user.getId();
     }
 
     // GET
