@@ -5,6 +5,7 @@ import DashboardIcon from "@rsuite/icons/legacy/Dashboard";
 import GroupIcon from "@rsuite/icons/legacy/Group";
 import MagicIcon from "@rsuite/icons/legacy/Magic";
 import GearCircleIcon from "@rsuite/icons/legacy/GearCircle";
+import AdminNavBar from "./AdminNavbar";
 
 function AdminDashboard() {
   const navigate = useNavigate();
@@ -27,6 +28,7 @@ function AdminDashboard() {
 
   return (
     <div>
+        <AdminNavBar firstName = {userData.firstName} lastName = {userData.lastName}/>
         <div style={{ width: 240 }}>
           <Sidenav defaultOpenKeys={["3", "4"]}>
             <Sidenav.Body>
