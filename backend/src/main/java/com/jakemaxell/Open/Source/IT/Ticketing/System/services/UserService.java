@@ -40,4 +40,14 @@ public class UserService {
         return null;
     }
 
+    // GET
+    public User findUserByUsername(String username, String password){
+        User user = userRepository.findUserByUsername(username);
+        if(Objects.equals(user.getUsername(), username) && Objects.equals(user.getPassword(), password)){
+            return user;
+        }
+
+        return null;
+    }
+
 }
