@@ -116,7 +116,6 @@ function Login() {
                 <Button appearance="primary" block onClick={login}>
                   Sign in
                 </Button>
-                <a href="#">Forgot password?</a>
               </Form>
             </Panel>
           </Stack>

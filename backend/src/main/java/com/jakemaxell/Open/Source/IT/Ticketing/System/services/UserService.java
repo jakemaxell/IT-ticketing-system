@@ -18,14 +18,18 @@ public class UserService {
     // POST
     public String createUser(User user){
         try {
-            userRepository.save(user);
+            User existingUser = userRepository.findUserByUsername(user.getUsername());
+            if(existingUser == null) {
+                userRepository.save(user);
+                return user.getId();
+            } else {
+                return "A user with that username already exists";
+            }
         } catch (Exception exception){
             return exception.getMessage();
         }
-        return user.getId();
     }
 
-    // GET
     public User findUserByUsername(String username, String password){
         User user = userRepository.findUserByUsername(username);
         if(Objects.equals(user.getUsername(), username) && Objects.equals(user.getPassword(), password)){
