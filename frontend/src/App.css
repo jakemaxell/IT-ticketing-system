@@ -60,3 +60,13 @@
 .custom-nav-item:hover {
     color: #ddd;
 }
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform: translateY(-10%);
+    z-index: 1;
+    position: relative;
+}

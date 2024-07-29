@@ -18,6 +18,10 @@ function NavBar() {
         navigate("/about");
     };
 
+    const handleLoginClick = () => {
+        navigate("/login");
+    };
+
     return (
         <Navbar className="custom-navbar" style={{ zIndex: 10 }}>
             <Navbar.Brand className="custom-navbar-brand" onClick={handleHomeClick}>
@@ -25,7 +29,6 @@ function NavBar() {
             </Navbar.Brand>
             <Nav>
                 <Nav.Item className="custom-nav-item" onClick={handleTicketClick}>Submit a Ticket</Nav.Item>
-                <Nav.Item className="custom-nav-item">Test</Nav.Item>
                 <Nav.Item className="custom-nav-item" onClick={handleAboutClick}>About</Nav.Item>
                 <Nav.Menu title="Contact">
                     <Nav.Item>Via Email</Nav.Item>
@@ -33,7 +36,7 @@ function NavBar() {
                 </Nav.Menu>
             </Nav>
             <Nav className="custom-nav-right" pullRight>
-                <Nav.Item className="custom-nav-item">Admin Login</Nav.Item>
+                <Nav.Item className="custom-nav-item" onClick={handleLoginClick}>Admin Login</Nav.Item>
             </Nav>
         </Navbar>
     );

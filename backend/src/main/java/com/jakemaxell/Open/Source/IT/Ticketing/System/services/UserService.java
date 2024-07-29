@@ -4,6 +4,8 @@ import com.jakemaxell.Open.Source.IT.Ticketing.System.models.Users.User;
 import com.jakemaxell.Open.Source.IT.Ticketing.System.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.Objects;
+
 @Service
 public class UserService {
 
@@ -21,6 +23,16 @@ public class UserService {
             return exception.getMessage();
         }
         return user.getId();
+    }
+
+    // GET
+    public User findUserByUsername(String username, String password){
+        User user = userRepository.findUserByUsername(username);
+        if(Objects.equals(user.getUsername(), username) && Objects.equals(user.getPassword(), password)){
+            return user;
+        }
+
+        return null;
     }
 
 }
