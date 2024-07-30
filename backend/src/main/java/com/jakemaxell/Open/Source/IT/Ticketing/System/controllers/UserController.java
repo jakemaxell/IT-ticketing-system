@@ -1,7 +1,8 @@
 package com.jakemaxell.Open.Source.IT.Ticketing.System.controllers;
 
+import com.jakemaxell.Open.Source.IT.Ticketing.System.dtos.LoginDto;
 import com.jakemaxell.Open.Source.IT.Ticketing.System.models.Users.User;
-import com.jakemaxell.Open.Source.IT.Ticketing.System.models.Users.UserSearchCriteria;
+import com.jakemaxell.Open.Source.IT.Ticketing.System.dtos.UserDto;
 import com.jakemaxell.Open.Source.IT.Ticketing.System.services.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -24,8 +25,8 @@ public class UserController {
     }
 
     @PostMapping("/find-user-by-username")
-    public ResponseEntity<User> findUserByUsername(@RequestBody UserSearchCriteria userSearchCriteria){
-        User user = userService.findUserByUsername(userSearchCriteria.getUsername(), userSearchCriteria.getPassword());
+    public ResponseEntity<User> findUserByUsername(@RequestBody LoginDto loginDto){
+        User user = userService.findUserByUsername(loginDto.getUsername(), loginDto.getPassword());
         if(user != null){
             return ResponseEntity.ok().body(user);
         }

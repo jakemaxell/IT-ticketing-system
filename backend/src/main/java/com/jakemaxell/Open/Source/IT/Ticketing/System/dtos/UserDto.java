@@ -1,11 +1,11 @@
-package com.jakemaxell.Open.Source.IT.Ticketing.System.models.Users;
+package com.jakemaxell.Open.Source.IT.Ticketing.System.dtos;
 
-public class UserSearchCriteria {
+public class UserDto {
 
     private String username;
     private String password;
 
-    public UserSearchCriteria(String username, String password) {
+    public UserDto(String username, String password) {
         this.username = username;
         this.password = password;
     }
