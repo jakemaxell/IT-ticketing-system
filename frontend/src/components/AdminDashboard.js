@@ -58,9 +58,6 @@ function AdminDashboard() {
                     <Nav.Item eventKey="4-5-2">Action Params</Nav.Item>
                   </Nav.Menu>
                 </Nav.Menu>
-                <Nav.Item eventKey="5" icon={<GroupIcon />} onClick={logout}>
-                  Logout
-                </Nav.Item>
               </Nav>
             </Sidenav.Body>
           </Sidenav>
