@@ -1,5 +1,5 @@
 
-name: NPM Build Test
+name: NPM_Build_Test
 
 on:
   pull_request:
