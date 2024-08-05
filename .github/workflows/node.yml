@@ -13,5 +13,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 10.7.0
-      - run: npm ci
-      - run: npm run build
+      - name: Install dependencies
+        run: |
+          pwd
+          npm ci
+        working-directory: ./path-to-your-project-directory  # Update this line if necessary
+      - name: Build project
+        run: |
+          pwd
+          npm run build
+        working-directory: ./path-to-your-project-directory  # Update this line if necessary
