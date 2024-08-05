@@ -2,7 +2,6 @@ package com.jakemaxell.Open.Source.IT.Ticketing.System.controllers;
 
 import com.jakemaxell.Open.Source.IT.Ticketing.System.dtos.LoginDto;
 import com.jakemaxell.Open.Source.IT.Ticketing.System.models.Users.User;
-import com.jakemaxell.Open.Source.IT.Ticketing.System.dtos.UserDto;
 import com.jakemaxell.Open.Source.IT.Ticketing.System.services.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

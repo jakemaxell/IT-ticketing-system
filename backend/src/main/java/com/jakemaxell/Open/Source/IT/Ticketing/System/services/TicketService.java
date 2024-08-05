@@ -1,9 +1,7 @@
 package com.jakemaxell.Open.Source.IT.Ticketing.System.services;
 
 import com.jakemaxell.Open.Source.IT.Ticketing.System.models.Tickets.Ticket;
-import com.jakemaxell.Open.Source.IT.Ticketing.System.models.Users.User;
 import com.jakemaxell.Open.Source.IT.Ticketing.System.repository.TicketRepository;
-import com.jakemaxell.Open.Source.IT.Ticketing.System.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
