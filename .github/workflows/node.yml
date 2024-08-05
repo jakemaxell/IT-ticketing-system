@@ -17,7 +17,7 @@ jobs:
         run: |
           pwd
           npm ci
-        working-directory: ./frontend
+        working-directory: ./
       - name: Build project
         run: |
           pwd
